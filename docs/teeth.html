@@ -504,23 +504,27 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcommalikh96myprojecttree57bb2f2467e0f9966604adfd5880df9b5de18900targetblank57bb2f2a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/malikh96/myproject/tree/57bb2f2467e0f9966604adfd5880df9b5de18900" target="_blank">57bb2f2</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcommalikh96myprojecttree08889fe8c8b732b1543f76458905a89ca6e9f3catargetblank08889fea"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/malikh96/myproject/tree/08889fe8c8b732b1543f76458905a89ca6e9f3ca" target="_blank">08889fe</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcommalikh96myprojecttree57bb2f2467e0f9966604adfd5880df9b5de18900targetblank57bb2f2a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcommalikh96myprojecttree08889fe8c8b732b1543f76458905a89ca6e9f3catargetblank08889fea" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/malikh96/myproject/tree/57bb2f2467e0f9966604adfd5880df9b5de18900" target="_blank">57bb2f2</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/malikh96/myproject/tree/08889fe8c8b732b1543f76458905a89ca6e9f3ca" target="_blank">08889fe</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
 </p>
 <pre><code>
 Ignored files:
+    Ignored:    .Rhistory
     Ignored:    .Rproj.user/
+
+Unstaged changes:
+    Modified:   analysis/index.Rmd
 
 </code></pre>
 <p>
@@ -559,6 +563,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/malikh96/myproject/blob/08889fe8c8b732b1543f76458905a89ca6e9f3ca/analysis/teeth.rmd" target="_blank">08889fe</a>
+</td>
+<td>
+Hagerah Malik
+</td>
+<td>
+2020-09-15
+</td>
+<td>
+Analyze teeth growth
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/malikh96/myproject/68d5910a0adb2cefeeef8abc7d514954ae76ddac/docs/teeth.html" target="_blank">68d5910</a>
+</td>
+<td>
+Hagerah Malik
+</td>
+<td>
+2020-09-15
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 html
@@ -616,7 +654,7 @@ head(teeth)</code></pre>
 <pre class="r"><code>boxplot(len ~ supp, data =teeth)</code></pre>
 <p><img src="figure/teeth.rmd/boxplots-2.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>boxplot(len ~ dose + supp, data =teeth)</code></pre>
-<p><img src="figure/teeth.rmd/boxplots-3.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/teeth.rmd/boxplots-3.png" width="672" style="display: block; margin: auto;" /> w</p>
 <pre class="r"><code>#observed difference in teeth length due to supplement method
 mean(teeth$len[teeth$supp == &quot;OJ&quot;]) - mean(teeth$len[teeth$supp == &quot;VC&quot;])</code></pre>
 <pre><code>[1] 3.7</code></pre>
